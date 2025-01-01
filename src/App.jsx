@@ -8,10 +8,14 @@ import './App.css';
 // import Form from './Form.jsx';
 import Counter from './Counter.jsx';
 import HappySad from './HappySad.jsx';
+import ColorBoxGrid from './ColorBoxGrid.jsx';
+import ColorList from './ColorList.jsx';
 
 function App() {
+  const colors = ColorList();
   return (
     <>
+      <ColorBoxGrid colors={colors}/>
       <HappySad />
       <Counter />
       {/*<Clicker />
