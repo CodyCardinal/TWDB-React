@@ -2,16 +2,16 @@ import { useState } from "react";
 
 export default function ScoreKeeper() {
     const [scores, setScores] = useState({ p1Score: 0, p2Score: 0 });
-    
+
     function increaseP1ScoreDirectStateUpdate() {
         const newScores = { ...scores, p1Score: scores.p1Score + 1 };
         setScores(newScores);
     }
 
     function increaseP1ScoreFunctionalStateUpdate() {
-        setScores((oldScores) => {
-            return { ...oldScores, p1Score: oldScores.p1Score + 1 };
-        });
+        setScores((oldScores) => ({
+            ...oldScores, p1Score: oldScores.p1Score + 1
+        }));
     }
 
     return (
