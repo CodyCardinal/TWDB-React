@@ -13,12 +13,14 @@ export default function EmojiClicker() {
             return oldEmojis.filter((each) => each.id !== id);
         });
     }
-    
+
 
     return (
         <>
             {emojis.map((each) => (
-                <span onClick={() => deleteEmoji(each.id)} key={each.id} style={{ fontSize: "4rem" }}>{each.emoji}</span>
+                <span onClick={() => deleteEmoji(each.id)} key={each.id} style={{ fontSize: "4rem" }}>
+                    {each.emoji}
+                </span>
             ))}
             <div></div>
             <button onClick={addEmoji}>Add Emoji</button>
