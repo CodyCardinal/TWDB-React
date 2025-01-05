@@ -13,10 +13,7 @@ export default function MovingDot() {
   */
   function updatePosition(evt) {
     const DomRect = evt.currentTarget.getBoundingClientRect();
-    // https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
     setPosition({
-      // clientX/Y The X/Y coordinate of the mouse pointer in viewport coordinates.
-      // https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent inherited by PointerEvent
       x: evt.clientX - DomRect.left,
       y: evt.clientY - DomRect.top
     });
