@@ -6,6 +6,8 @@
     "comments": true,
     "strings": true
   },
+  "editor.formatOnSave": true,
+  "prettier.requireConfig": true,
   "editor.parameterHints.enabled": true,
   "editor.hover.enabled": true, // Enable hover tooltips
   "editor.suggestOnTriggerCharacters": true, // Enable suggestions on trigger characters

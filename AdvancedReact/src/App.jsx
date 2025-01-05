@@ -5,6 +5,7 @@ import './App.css';
 // import ListComponent from './ListComponent.jsx';
 // import EmojiClicker from './EmojiClicker.jsx';
 import PlayerScoreKeeper from './PlayerScoreKeeper.jsx';
+import Library from './Library.jsx';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <MovingDot />
       <ListComponent />
       <EmojiClicker /> */}
-      <PlayerScoreKeeper numPlayers={4}/>
+      <PlayerScoreKeeper numPlayers={4} winner={5} />
+      <Library />
     </>
   )
 }
