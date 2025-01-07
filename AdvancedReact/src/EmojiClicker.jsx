@@ -4,22 +4,15 @@ import { useState } from "react";
 export default function EmojiClicker() {
     const [emojis, setEmojis] = useState([{ id: uuid(), emoji: "😁" }]);
 
-    const addEmoji = () => {
-        setEmojis((oldEmojis) => [...oldEmojis, { id: uuid(), emoji: "😘" }]);
-    };
+    const addEmoji = () => setEmojis((oldEmojis) => [...oldEmojis, { id: uuid(), emoji: "😘" }]);
 
-    const deleteEmoji = (id) => {
-        setEmojis((oldEmojis) => {
-            return oldEmojis.filter((each) => each.id !== id);
-        });
-    }
-
+    const deleteEmoji = (id) => setEmojis((oldEmojis) => oldEmojis.filter((each) => each.id !== id));
 
     return (
         <>
-            {emojis.map((each) => (
-                <span onClick={() => deleteEmoji(each.id)} key={each.id} style={{ fontSize: "4rem" }}>
-                    {each.emoji}
+            {emojis.map((id, emoji) => (
+                <span onClick={() => deleteEmoji(id)} key={id} style={{ fontSize: "4rem" }}>
+                    {emoji}
                 </span>
             ))}
             <div></div>
