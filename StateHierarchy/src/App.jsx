@@ -8,7 +8,7 @@ function App() {
       <h1>State Hierarchy</h1>
       <SyncedInputs />
     </>
-  )
+  );
 }
 
 export default App

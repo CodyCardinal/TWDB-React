@@ -1,12 +1,4 @@
-import { useState } from "react";
-
-export default function Input({ label }) {
-    const [text, setText] = useState('');
-
-    function handleChange(e) {
-        setText(e.target.value);
-    }
-
+export default function Input({ label, text, handleChange }) {
     return (
         <label>
             {label}
