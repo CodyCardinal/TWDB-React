@@ -1,12 +1,11 @@
 import './App.css'
-import SyncedInputs from './SyncedInputs'
+import TMDBConsole from './TMDBConsole'
 
 function App() {
 
   return (
     <>
-      <h1>State Hierarchy</h1>
-      <SyncedInputs />
+      <TMDBConsole />
     </>
   );
 }

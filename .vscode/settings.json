@@ -9,7 +9,7 @@
     "comments": true,
     "strings": true
   },
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "prettier.requireConfig": true,
   "editor.parameterHints.enabled": true,
   "editor.hover.enabled": true, // Enable hover tooltips
