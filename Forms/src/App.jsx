@@ -1,10 +1,13 @@
 import './App.css';
-import ShoppingList from './ShoppingList.jsx';
+// https://randomuser.me/api/?results=20
+import Objectifier from './Objectifier.jsx';
 
 function App() {
+  
+
   return (
     <>
-      <ShoppingList />
+      <Objectifier />
     </>
   );
 
