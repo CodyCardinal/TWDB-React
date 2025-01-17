@@ -1,13 +1,13 @@
 import './App.css';
 // https://randomuser.me/api/?results=20
-import Objectifier from './Objectifier.jsx';
+import Pandafier from './Pandafier.jsx';
 
 function App() {
   
 
   return (
     <>
-      <Objectifier />
+      <Pandafier />
     </>
   );
 
